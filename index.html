@@ -1,0 +1,39 @@
+<docktype.html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="calculator.css">
+        <script src="calculator.js"></script>
+        <title>calculator</title>
+    </head>
+    <body>
+        <div class="var_container">
+            <div class="var_screen">
+                <p id="var_display"></p>
+            </div>
+            
+            <div id="var_button">
+                <button class="var_power" onclick="func_destroy()">AC</button>
+                <button class="var_operator" onclick="func_destroy()">C</button>
+                <button class="var_operator" onclick="func_key('%')">%</button>
+                <button class="var_operator" onclick="func_key('/')">/</button>
+                <button onclick="func_key('7')">7</button>
+                <button onclick="func_key('8')">8</button>
+                <button onclick="func_key('9')">9</button>
+                <button class="var_operator"  onclick="func_key('+')">+</button>
+                <button onclick="func_key('4')">4</button>
+                <button onclick="func_key('5')">5</button>
+                <button onclick="func_key('6')">6</button>
+                <button class="var_operator" onclick="func_key('-')">-</button>
+                <button onclick="func_key('1')">1</button>
+                <button onclick="func_key('2')">2</button>
+                <button onclick="func_key('3')">3</button>
+                <button class="var_operator"  onclick="func_key('*')">x</button>
+                <button onclick="func_key('.')">.</button>
+                <button onclick="func_key('0')">0</button>
+                <button onclick="func_back()"><i class="bi bi-backspace">←</i></button>
+                <button class="var_operator" onclick="func_solve()">=</button>
+            </div>
+        </div>
+    </body>
+    </html>
+    
